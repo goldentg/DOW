@@ -2,7 +2,7 @@
 This Discord bot will completely destroy any server you want, all you need is the targets bot token. 
 
 <p align="center">
-    <a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
+    <a href=" "><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg"></a>
   <br>
 </p>
 
