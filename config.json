@@ -5,6 +5,7 @@
     "banMembers": true,
     "deleteChannels": true,
     "deleteEmotes": true,
-    "commandModeToggle": false
+    "commandModeToggle": false,
+    "banIntervalTime": 200
     
 }

