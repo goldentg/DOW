@@ -7,7 +7,7 @@ This Discord bot will completely destroy any server you want, all you need is th
 </p>
 
 ### - NEW -
-If you want a version of DOW with a GUI [go here](https://github.com/goldentg/DOW-GUI)
+[![Run on Repl.it](https://repl.it/badge/github/goldentg/DOW)](https://repl.it/github/goldentg/DOW)
 
 ### - Features -
 * Deletes all channels
